@@ -1,11 +1,11 @@
 enum eGlobals
 {
-	//Im Foxxyyy
+    //Im Foxxyyy
     PlayerActor = 34573,
     PlayerPosition = 34574,
     NetPlayersData = 76943,
     MyNetPlayerData = 78480,
-	CurrentSavedModel = 13038,
+    CurrentSavedModel = 13038,
     CurrentRegionLayout = 30616,   
     gbGameProgression = 3365,
     gmp_cpchallenges = 55869,
@@ -22,10 +22,10 @@ enum eGlobals
     gResetData = 34165,
     gMP_SavedTitle = 76886,
     gMP_SavedHorseAEName = 76870,
-	gMP_MPLAW_Layout = 79341,
-	gMP_MPLAW_holdingSet = 78577,
-	gMPScratchLayout = 79342,
-	gMP_OpenedPickupSet = 83590,
+    gMP_MPLAW_Layout = 79341,
+    gMP_MPLAW_holdingSet = 78577,
+    gMPScratchLayout = 79342,
+    gMP_OpenedPickupSet = 83590,
     gMP_SavedPlayerAEName = 76854,
     gbGraveGunDialogPlayed = 3415,
     gaNetUnlockState = 26055,

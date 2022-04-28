@@ -1,0 +1,30 @@
+0 =  Default (likely Cowboy)
+1 =  Elegant Suit
+2 =  Reyes Rebel Outfit
+3 =  Treasure Hunter
+5 =  Bollard Twins
+6 =  Bandito
+9 =  US Army
+10 = Rancher Clothing
+11 = Legend Of The West
+12 = Default (likely Cowboy)
+13 = Gentleman's Attire
+14 = Injured John(Original)
+15 = Injured John 2 (Original)
+16 = Duster Coat
+17 = Mexican Poncho
+18 = Deadly Assassin
+19 = Expert Hunter
+20 = Savvy Merchant
+
+//Undead only
+14 = Legend Of The Undead
+15 = Army Of The Undead
+21 = Union Suit
+22 = Undead Cowboy
+23 = Legend Of The Apocalypse
+24 = Undead Hunter
+
+Use this native to change John's outfit :
+- void 0x7AB17813(Actor actor, int outfitID);
+- IDs 4, 7 & 8 are invalid

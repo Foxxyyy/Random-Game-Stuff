@@ -1,0 +1,76 @@
+//Volumes - Sectors IDs
+
+5   Cholla Springs
+6   Diez Coronas
+7   Gaptooth Bridge
+8   Great Plains
+9   Hennigan's Stead
+10  Perdido
+11  Punta Orgullo
+12  Rio Bravo
+13  Tall Trees
+14  Agave Viejo
+15  Armadillo
+16  Beecher's Hope
+17  Benedict Point
+18  Blackwater
+19  Casa Madrugada
+20  Chuparosa
+21  Cochinay
+22  Coot's Chapel
+23  El Matadero
+24  El Presidio
+25  Escalera
+26  Las Hermanas
+27  MacFarlane's Ranch
+28  Manzanita Post
+29  Pacific Union RR Camp
+30  Plainview
+31  Ridgewood Farm
+32  Rathskeller Fork
+33  Thieve's Landing
+34  Torquemada
+35  Fort Mercer
+36  Gaptooth Breach
+37  Nosalida
+38  Pike's Basin
+39  Tesoro Azul
+40  Tumbleweed
+41  Twin Rocks
+88  Broken Tree
+89  Critchley's Ranch
+90  Crooked Toes
+91  Cueva Seca
+92  Rio del Lobo
+93  Roca de Madera
+94  The Scratching Post
+95  Silent Stead
+96  Venter's Place
+97  Rancho Polvo
+98  Warthington Ranch
+
+//Returns the volume ID for a player slot
+unsafe int GetVolumeID(int slotID)
+{
+	__getFrame(0);
+	__getGlobalP(76943);
+	__getArray(96);
+	return __popI();
+}
+
+//Example :
+char* slotZeroLocation = GetVolumeID(0) == 15 ? "Armadillo" : "Elsewhere";
+
+//Returns your volume ID
+unsafe int GetOurVolumeID(int value)
+{
+    __getFrame(0);
+    __getGlobalP(29155);
+    __getArrayP(10);
+    __getImm(8);
+    return __popI();
+}
+
+//Example :
+char* myCurrentVolumeName = GET_OBJECT_NAME(GetOurVolumeID(getGlobalAtIndex(78480)));
+char* myCurrentLayoutName GET_LAYOUT_NAME(getGlobalAtIndex(30616));

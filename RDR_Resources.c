@@ -1,15 +1,24 @@
 /*
 	Listener :
 	
-	No CPed, no CObject and no CVehicle either. Instead, there is the concept of an actor, which, depending on the assigned handlers, can be human, animal, or vehicle. As a result, everything connected with actors is not a bit like what it was before.
+	No CPed, no CObject and no CVehicle either. Instead, there is the concept of an actor, which, depending on the assigned handlers, can be human, animal,
+	or vehicle. As a result, everything connected with actors is not a bit like what it was before.
 
-	But this only applies to game logic. The principles of working with the map remained the same: in the same way we have a play space, in the same way it is divided into sectors... Except that the format has been heavily cleaned up.
+	But this only applies to game logic. The principles of working with the map remained the same: in the same way we have a play space,
+	in the same way it is divided into sectors... Except that the format has been heavily cleaned up.
 
-	The .ipl role was taken over by .xsi. (sagSectorInfo) It describes the region (from a single interior to the entire map). The main difference is that .ipl did not overlap, but .xsi covers the sector, while descriptions of sub-sectors can be placed in separate files (which, in turn, may contain sub-sectors), or can be located in the same resource. The root resource is swAll.xsi, which covers the entire map. It (in the version that I have) is divided into 106 zones (in others, this number may differ slightly, because some of the zones are reserved for DLC). At the same time, sub-sectors can also overlap (the main thing is that they cannot go beyond the boundaries of the parent sector).
+	The .ipl role was taken over by .xsi. (sagSectorInfo) It describes the region (from a single interior to the entire map).
+	The main difference is that .ipl did not overlap, but .xsi covers the sector, while descriptions of sub-sectors can be placed in separate files
+	(which, in turn, may contain sub-sectors), or can be located in the same resource.
+	The root resource is swAll.xsi, which covers the entire map. It (in the version that I have) is divided into 106 zones
+	(in others, this number may differ slightly, because some of the zones are reserved for DLC).
+	At the same time, sub-sectors can also overlap (the main thing is that they cannot go beyond the boundaries of the parent sector).
 
-	Presumably, this is done in order to be able to describe some blocks into several sub-sectors at once, without intermediate division into pieces (for example, a sub-sector with the speaking name swTerrain.xsi covers the entire territory in swAll).
+	Presumably, this is done in order to be able to describe some blocks into several sub-sectors at once, without intermediate division into pieces
+	(for example, a sub-sector with the speaking name swTerrain.xsi covers the entire territory in swAll).
 
-	The main difference from .ipl is that inside .xsi there can be models and collisions and do not forget that when you change the border of the zone, you also need to correct the parent sectors.
+	The main difference from .ipl is that inside .xsi there can be models and collisions and do not forget that when you change the border of the zone,
+	you also need to correct the parent sectors.
 
 	Terrain and static objects are collected in VolumeData - a very simple object, which, in fact, is a bunch of xdd and xtd.
 	Different LODs are moved to separate .xvd files. The vegetation has been moved to separate .xsg resources.

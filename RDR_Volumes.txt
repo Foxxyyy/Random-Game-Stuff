@@ -77,5 +77,5 @@ char* myCurrentLayoutName GET_LAYOUT_NAME(getGlobalAtIndex(30616));
 
 //It seems that a lot of sectors can be "visually enabled or disabled".
 //This example will visually remove Armadillo, its buildings, objects and collisions, this is the native we used in Demonic Menu for interiors.
-//It can be used for a lot more, maybe terrain tiles.
+//Looks like it can be used for a lot more and maybe terrain tiles...
 DISABLE_WORLD_SECTOR("Armadillo");

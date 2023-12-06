@@ -1,10 +1,10 @@
 //Resources
 #TD - Texture Dictionary
 #TX - Texture Map
-#VD - Volume Data
+#VD - Visual Dictionary
 #BD - Bounds Dictionary
 #FT - Fragment
-#FD - Fragment Dictionary
+#FD - Frag Drawable
 #SC - Script
 #ST - String Table
 #SP - SpeedTree
@@ -20,9 +20,10 @@
 #SF - ScaleForm
 #PFL - Particle Effects Library
 #PRP - Props
-#CDT - Cutscene Dictionary
+#ADT - Animation Dictionary
+#CDT - Clip Dictionary
 #EDT - Expressions Dictionary
-#PDT - Posematchers Dictionary
+#PDT - Parametized Motion Dictionary
 
 //Regular files
 RPF - Rage Package File

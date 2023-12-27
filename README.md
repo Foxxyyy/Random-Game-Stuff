@@ -1,3 +1,1 @@
-# Random Stuff
-
-Some research & random stuff I did
+# Random RDR/RAGE related stuff
